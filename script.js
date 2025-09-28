@@ -1,3 +1,56 @@
+// Language switching functionality
+class LanguageManager {
+    constructor() {
+        this.currentLanguage = localStorage.getItem('language') || 'en';
+        this.langBtn = document.getElementById('lang-btn');
+        this.langText = document.querySelector('.lang-text');
+        this.init();
+    }
+    
+    init() {
+        this.setupLanguageButton();
+        this.setLanguage(this.currentLanguage);
+    }
+    
+    setupLanguageButton() {
+        if (this.langBtn) {
+            this.langBtn.addEventListener('click', () => {
+                this.toggleLanguage();
+            });
+        }
+    }
+    
+    toggleLanguage() {
+        this.currentLanguage = this.currentLanguage === 'en' ? 'zh' : 'en';
+        this.setLanguage(this.currentLanguage);
+        localStorage.setItem('language', this.currentLanguage);
+    }
+    
+    setLanguage(language) {
+        const elements = document.querySelectorAll('[data-en][data-zh]');
+        
+        elements.forEach(element => {
+            const text = element.getAttribute(`data-${language}`);
+            if (text) {
+                element.textContent = text;
+            }
+        });
+        
+        // Update language button text
+        if (this.langText) {
+            this.langText.textContent = language === 'en' ? '中文' : 'EN';
+        }
+        
+        // Update document language attribute
+        document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+    }
+}
+
+// Initialize language manager when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new LanguageManager();
+});
+
 // Mobile Navigation Toggle
 const mobileMenu = document.getElementById('mobile-menu');
 const navMenu = document.querySelector('.nav-menu');

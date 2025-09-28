@@ -14,19 +14,19 @@
 
 .fas.fa-code::before,
 .fa-code::before {
-    content: "💻";
+    content: "🛜";
     font-family: inherit;
 }
 
 .fas.fa-calculator::before,
 .fa-calculator::before {
-    content: "🔢";
+    content: "💾";
     font-family: inherit;
 }
 
 .fas.fa-gamepad::before,
 .fa-gamepad::before {
-    content: "🎮";
+    content: "📞";
     font-family: inherit;
 }
 
@@ -134,6 +134,34 @@ body {
     width: 100%;
 }
 
+/* Language Toggle */
+.language-toggle {
+    margin-left: 20px;
+}
+
+.lang-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(37, 99, 235, 0.2);
+}
+
+.lang-btn:hover {
+    background: #1e40af;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+.lang-text {
+    font-weight: inherit;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -237,14 +265,27 @@ body {
 }
 
 .hero-avatar {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    backdrop-filter: blur(10px);
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.hero-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -20% 100%;
+    transform: scale(1.6);
+    display: block;
 }
 
 .hero-avatar i {
@@ -687,144 +728,3 @@ section {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-        padding: 20px 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-toggle {
-        display: flex;
-    }
-
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .hero-buttons {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .hero-avatar {
-        width: 200px;
-        height: 200px;
-    }
-
-    .hero-avatar i {
-        font-size: 100px;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .about-stats {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .timeline::before {
-        left: 20px;
-    }
-
-    .timeline-item {
-        justify-content: flex-start;
-        padding-left: 50px;
-        padding-right: 0;
-    }
-
-    .timeline-item:nth-child(odd) {
-        justify-content: flex-start;
-        padding-left: 50px;
-        padding-right: 0;
-    }
-
-    .timeline-marker {
-        left: 20px;
-        transform: translateX(-50%);
-    }
-
-    .timeline-content {
-        width: calc(100% - 50px);
-    }
-
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .contact-form {
-        padding: 30px 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    section {
-        padding: 60px 0;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 40px;
-    }
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .skill-category {
-        min-width: auto;
-    }
-}
