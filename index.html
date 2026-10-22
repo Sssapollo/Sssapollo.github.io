@@ -3,369 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tianding Hou - Infomatik(CS) Student @ TUM. Passionate about coding, learning, and building innovative solutions. View my portfolio, skills, and academic progress.">
-    <meta name="keywords" content="Tianding Hou, software developer, student, programming, web development, portfolio, computer science">
+    <meta name="description" content="Tianding Hou - Computer Science M.Sc. student at TUM working on LLM applications, software systems, and robot learning.">
+    <meta name="keywords" content="Tianding Hou, TUM, portfolio, LLMs, robotics, software systems, recommender systems, moodtrip">
     <meta name="author" content="Tianding Hou">
-
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sssapollo.github.io/">
-    <meta property="og:title" content="Sssapollo - Personal Portfolio">
-    <meta property="og:description" content="Software Developer & Student passionate about coding and building innovative solutions.">
-    
-    <!-- Twitter -->
+    <meta property="og:title" content="Tianding Hou — AI Systems & Robot Learning">
+    <meta property="og:description" content="Computer Science M.Sc. student at TUM. LLM applications, software engineering, and vision-language-action policies.">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sssapollo.github.io/">
-    <meta property="twitter:title" content="Sssapollo - Personal Portfolio">
-    <meta property="twitter:description" content="Software Developer & Student passionate about coding and building innovative solutions.">
-
-    <title>Tianding Hou - Personal Portfolio</title>
+    <meta property="twitter:title" content="Tianding Hou — AI Systems & Robot Learning">
+    <meta property="twitter:description" content="Computer Science M.Sc. student at TUM. LLM applications, software engineering, and vision-language-action policies.">
+    <title>Tianding Hou — AI Systems & Robot Learning</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Tianding Hou</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link" data-en="Home" data-zh="首页"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link" data-en="About" data-zh="关于我"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link" data-en="Skills" data-zh="技能"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link" data-en="Education" data-zh="教育经历"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link" data-en="Projects" data-zh="项目展示"></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link" data-en="Contact" data-zh="联系我"></a>
-                </li>
-            </ul>
-            <div class="language-toggle">
-                <button id="lang-btn" class="lang-btn">
-                    <span class="lang-text">中文</span>
-                </button>
-            </div>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title" >
-                    <span data-en="Hi, I'm " data-zh="你好，我是 "></span>
-  <span class="highlight" data-en="Tianding Hou" data-zh="侯天丁">Tianding Hou</span>
-                </h1>
-                </h1>
-                <h2 class="hero-subtitle" data-en="Student @ TUM" data-zh="慕尼黑工业大学计算机专业学生">Student @ TUM</h2>
-                <p class="hero-description" data-en="Passionate about coding, learning, and building innovative solutions. Currently pursuing my studies @ TUM while developing my programming skills." data-zh="热爱编程、学习和构建创新解决方案。目前在TUM计算机专业的同时不断提升自己的编程技能。"></p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary" data-en="View My Work" data-zh="查看我的项目"></a>
-                    <a href="#contact" class="btn btn-secondary" data-en="Get In Touch" data-zh="联系我"></a>
+    <a class="skip-link" href="#main">Skip to content / 跳至正文</a>
+    <div class="page-shell">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo">Tianding Hou</a>
+                <div class="nav-actions">
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="#research" class="nav-link" data-en="Research" data-zh="研究">Research</a></li>
+                        <li><a href="#projects" class="nav-link" data-en="Projects" data-zh="项目">Projects</a></li>
+                        <li><a href="#skills" class="nav-link" data-en="Skills" data-zh="技能">Skills</a></li>
+                        <li><a href="#education" class="nav-link" data-en="Education" data-zh="教育">Education</a></li>
+                        <li><a href="#contact" class="nav-link" data-en="Contact" data-zh="联系">Contact</a></li>
+                    </ul>
+                    <button id="lang-btn" class="lang-btn" aria-label="Toggle language">
+                        <span class="lang-text">中文</span>
+                    </button>
+                    <button class="nav-toggle" id="mobile-menu" aria-controls="nav-menu" aria-label="Toggle menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-avatar">
-                    <img src="images/profile_pic.jpg" alt="Profile Picture">
-                </div>
-            </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p data-en="I'm a student with a passion for creating efficient and innovative solutions. My journey in programming started with curiosity and has evolved into a deep commitment to mastering the craft." 
-                    data-zh="我是一名学生，热衷于创造高效创新的挑战。">
-                    <p data-en="Currently balancing my academic studies with practical programming experience, I enjoy working on diverse projects that challenge me to grow and learn new technologies." data-zh="目前我在大学学习中增长编程经验，喜欢参与各种项目，这些项目挑战着我成长并学习新技术。">
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label" data-en="Years Coding" data-zh="年编程经验"></span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label" data-en="Projects" data-zh="项目"></span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label" data-en="Mastered Coding Languages" data-zh="掌握的编程语言"></span>
-                        </div>
+        <main id="main">
+            <section id="home" class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-copy">
+                        <h1 class="hero-title"><span data-en="Building AI systems." data-zh="构建 AI 系统。">Building AI systems.</span><span data-en="Exploring robot learning." data-zh="探索机器人学习。">Exploring robot learning.</span></h1>
+                        <p class="hero-description" data-en="I’m Tianding Hou, a Computer Science M.Sc. student at the Technical University of Munich. My work connects LLM applications, software engineering, and vision-language-action policies." data-zh="我是侯天丁，慕尼黑工业大学计算机科学硕士在读。我的项目连接 LLM 应用、软件工程与视觉语言动作模型（VLA）。">I’m Tianding Hou, a Computer Science M.Sc. student at the Technical University of Munich. My work connects LLM applications, software engineering, and vision-language-action policies.</p>
+                        <div class="hero-actions"><a class="text-link" href="#research" data-en="Explore research" data-zh="了解我的研究">Explore research</a><a class="text-link" href="https://github.com/Sssapollo" target="_blank" rel="noreferrer">GitHub</a></div>
                     </div>
+                    <figure class="hero-visual"><div class="portrait-frame"><img src="images/profile_pic.jpg" width="768" height="1024" alt="Portrait of Tianding Hou"></div><figcaption data-en="Tianding Hou · Technical University of Munich" data-zh="侯天丁 · 慕尼黑工业大学">Tianding Hou · Technical University of Munich</figcaption></figure>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title" data-en="Technical Skills" data-zh="技术技能">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <div class="skill-name">Python</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="70%"></div>
-                            </div>
+
+
+
+
+
+
+
+
+
+
+            <section id="research" class="section research">
+                <div class="container">
+                    <div class="section-heading"><span class="section-number">01</span><h2 data-en="Research" data-zh="研究与毕设">Research</h2></div>
+                    <article class="research-grid">
+                        <div class="research-copy">
+                            <h3 class="research-title">React When You Need To</h3>
+                            <p class="research-subtitle">Event-Triggered Asynchronous Inference for VLA Policies</p>
+                            <p class="research-authors">Yansong Wu, Huaqing Li, <strong>Tianding Hou</strong>, Lingyun Chen, Alois Knoll</p>
+                            <p class="research-meta" data-en="Bachelor’s thesis research · arXiv preprint · 2026" data-zh="本科毕设研究 · arXiv 预印本 · 2026">Bachelor’s thesis research · arXiv preprint · 2026</p>
+                            <p data-en="When should a robot update its plan? A pairwise visual trigger compares the current scene with the observation behind the active action chunk, starting inference earlier when the scene changes. Asynchronous execution and action blending help the robot keep moving between updates." data-zh="机器人何时应该更新计划？成对视觉触发器将当前场景与生成正在执行的动作块时的观测进行比较，在场景变化时提前启动推理。异步执行与动作融合让机器人在更新之间继续运动。">When should a robot update its plan? A pairwise visual trigger compares the current scene with the observation behind the active action chunk, starting inference earlier when the scene changes. Asynchronous execution and action blending help the robot keep moving between updates.</p>
+                            <div class="project-meta"><span class="meta-chip">VLA / π₀.₅</span><span class="meta-chip">Pairwise trigger</span><span class="meta-chip">Asynchronous inference</span></div>
+                            <div class="project-links"><a class="text-link" href="https://arxiv.org/abs/2609.22587" target="_blank" rel="noreferrer" data-en="Paper · arXiv" data-zh="论文 · arXiv">Paper · arXiv</a><a class="text-link" href="https://react-when-you-need-to.github.io/" target="_blank" rel="noreferrer" data-en="Project website" data-zh="论文项目网站">Project website</a><a class="text-link" href="https://react-when-you-need-to.github.io/#experiments" target="_blank" rel="noreferrer" data-en="All demonstrations" data-zh="全部实验演示">All demonstrations</a></div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Java</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">C</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Ocaml</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="50%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">HTML/CSS</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                    </div>
+                        <figure class="research-video" id="research-video">
+                            <video controls playsinline preload="none" poster="images/research-demo.jpg" aria-label="React When You Need To supplementary video"><source src="https://react-when-you-need-to.github.io/assets/supplementary.mp4" type="video/mp4"><a href="https://react-when-you-need-to.github.io/assets/supplementary.mp4">Watch the supplementary video</a></video>
+                            <figcaption><span data-en="The method in motion · Supplementary film" data-zh="研究方法与真实机器人实验 · 补充视频">The method in motion · Supplementary film</span><a href="https://react-when-you-need-to.github.io/#film" target="_blank" rel="noreferrer" data-en="Watch on project website" data-zh="在项目网站观看">Watch on project website</a></figcaption>
+                        </figure>
+                    </article>
+                    <details class="research-details"><summary data-en="A closer look at the method" data-zh="展开查看方法概览">A closer look at the method</summary><figure><img src="images/research-method.png" width="1995" height="784" loading="lazy" alt="Method timeline showing event estimation, asynchronous policy inference, robot action execution, and blending of overlapping action chunks."><figcaption data-en="Pairwise event estimation, policy inference, and overlapping action chunks. Source: paper Figure 1." data-zh="成对事件估计、策略推理与重叠动作块。来源：论文图 1。">Pairwise event estimation, policy inference, and overlapping action chunks. Source: paper Figure 1.</figcaption></figure></details>
                 </div>
-                <div class="skill-category">
-                    <h3>Frameworks & Tools</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <div class="skill-name">React</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="50%"></div>
+            </section>
+
+            <section id="projects" class="section projects">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-number">02</span><h2 data-en="Selected projects" data-zh="项目经历">Selected projects</h2>
+                    </div>
+
+                    <article class="featured-project reveal">
+                        <div class="project-copy">
+                            <span class="project-label" data-en="Conversational recommendation" data-zh="对话式推荐系统">Conversational recommendation</span>
+                            <h3>Moodtrip</h3>
+                            <p class="project-summary" data-en="Emotion-Aware Conversational Recommender System built during a practical course at TUM. The project used LLMs in a chat interface to extract user emotions and personalize itineraries based on emotional state, preferences, and real-world travel context." data-zh="一个在 TUM 实践课程中完成的情绪感知对话式推荐系统。项目通过聊天界面中的 LLM 提取用户情绪，并结合偏好与真实出行场景个性化生成旅行路线。">Emotion-Aware Conversational Recommender System built during a practical course at TUM. The project used LLMs in a chat interface to extract user emotions and personalize itineraries based on emotional state, preferences, and real-world travel context.</p>
+                            <div class="project-meta">
+                                <span class="meta-chip">Spring Boot WebFlux</span>
+                                <span class="meta-chip">React</span>
+                                <span class="meta-chip">LLM</span>
+                                <span class="meta-chip">Empirical Bayes</span>
+                                <span class="meta-chip">MMR</span>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Node.js</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="40%"></div>
+                            <div class="project-links">
+                                <a href="https://github.com/RecSys-Lab-WS-2025/Team_5" target="_blank" rel="noreferrer" class="text-link" data-en="View Project" data-zh="查看项目">View Project</a>
+                                <a href="#moodtrip-demo" class="text-link" data-en="Interactive preview" data-zh="交互预览">Interactive preview</a>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Git</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">SQL</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Linux</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="60%"></div>
-                            </div>
+                            <figure class="moodtrip-film" id="moodtrip-film">
+                                <h4 data-en="Full project walkthrough" data-zh="项目完整演示">Full project walkthrough</h4>
+                                <video controls playsinline preload="none" poster="images/moodtrip-video.jpg" width="960" height="544" aria-label="Moodtrip full project walkthrough">
+                                    <source src="videos/moodtrip-full-demo.mp4" type="video/mp4">
+                                    <a href="videos/moodtrip-full-demo.mp4">Watch the full Moodtrip video</a>
+                                </video>
+                                <figcaption><span data-en="05:46 · Complete project recording" data-zh="05:46 · 完整项目录屏">05:46 · Complete project recording</span><a href="videos/moodtrip-full-demo.mp4" target="_blank" rel="noreferrer" data-en="Open video" data-zh="单独打开视频">Open video</a></figcaption>
+                            </figure>
                         </div>
 
-                        <div class="skill-item">
-                            <div class="skill-name">Docker</div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="60%"></div>
+                        <div id="moodtrip-demo" class="demo-shell">
+                            <div class="demo-header">
+                                <div>
+                                    <p class="demo-kicker">Moodtrip mini demo</p>
+                                    <h4 data-en="A trip that starts with you" data-zh="从你的心情开始一段旅程">A trip that starts with you</h4>
+                                </div>
+                                <span class="demo-status" data-en="Scripted conversation · sample routes" data-zh="预设对话 · 示例路线">Scripted conversation · sample routes</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title" data-en="Education & Studies" data-zh="教育经历">Education & Studies</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 data-en="Computer Science Studies" data-zh="计算机科学学习">Computer Science Studies</h3>
-                        <h4 data-en="Technical University of Munich" data-zh="慕尼黑工业大学">Technical University of Munich</h4>
-                        <span class="timeline-date" data-en="2023 - Present" data-zh="2023 - 至今">2023 - Present</span>
-                        <p data-en="Currently pursuing my degree in Computer Science with focus on software development and algorithms." data-zh="目前正在攻读计算机科学本科学位，热爱软件和网站开发。">Currently pursuing my degree in Computer Science with focus on software development and algorithms.</p>
-                        <div class="progress-indicator">
-                            <span data-en="Progress: 66% Complete" data-zh="进度：完成 66%">Progress: 66% Complete</span>
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 66%"></div>
+                            <div class="demo-chat">
+                                <div id="demo-messages" class="chat-messages" role="log" aria-label="Moodtrip conversation" aria-live="polite" aria-relevant="additions text"></div>
+                                <p id="demo-choice-label" class="control-label"></p>
+                                <div id="demo-choices" class="chat-choices" role="group" aria-labelledby="demo-choice-label"></div>
+                                <button type="button" id="demo-restart" class="chat-restart" hidden data-en="Start over" data-zh="重新开始">Start over</button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 data-en="High School Diploma" data-zh="高中教育">High School Diploma</h3>
-                        <h4 data-en="Chengdu Experimental Foreign Language School" data-zh="成都实验外国语学校">Chengdu Experimental Foreign Language School</h4>
-                        <span class="timeline-date">2016 - 2022</span>
-                        <p data-en="Graduated with honors, developed initial interest in programming and technology. Learned English and German." data-zh="优秀毕业生，编程和技术产生兴趣,为往后的学习打下扎实的基础。学习了英语和德语。">Graduated with honors, developed initial interest in programming and technology. Learned English and German.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <div id="demo-result" hidden>
+                            <h4 id="demo-title" class="demo-route-title" tabindex="-1">Quiet River Walk</h4>
+                            <div class="demo-controls">
+                                <div class="control-group">
+                                    <span class="control-label" data-en="How do you feel?" data-zh="你现在的状态？">How do you feel?</span>
+                                    <div class="mood-buttons">
+                                        <button class="mood-button is-active" data-mood="calm">Calm</button>
+                                        <button class="mood-button" data-mood="happy">Happy</button>
+                                        <button class="mood-button" data-mood="stressed">Stressed</button>
+                                        <button class="mood-button" data-mood="curious">Curious</button>
+                                    </div>
+                                </div>
+                            </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title" data-en="Featured Projects" data-zh="特色项目">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 data-en="Personal Portfolio Website" data-zh="个人网站">Personal Portfolio Website</h3>
-                        <p data-en="A responsive personal website built with HTML, CSS, and JavaScript showcasing my skills and projects." data-zh="一个使用 HTML、CSS 和 JavaScript 构建的响应式个人网站，展示我的技能和项目。">A responsive personal website built with HTML, CSS, and JavaScript showcasing my skills and projects.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Sssapollo/Sssapollo.github.io" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#home" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 data-en="Secure Memory Unit" data-zh="安全存储单元">Secure Memory Unit</h3>
-                        <p data-en="A secure memory unit to be integrated into the RISC-V CPU with a bunch of security features." data-zh="一个集成到 RISC-V CPU 中的安全存储单元，具有多种安全功能。">A secure memory unit to be integrated into the RISC-V CPU with a bunch of security features.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C++ systemC</span>
-                            <span class="tech-tag">C(Frameworks,CLI)</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Sssapollo/grass25-projekt" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 data-en="Catbook" data-zh="猫书">Catbook</h3>
-                        <p data-en="A fun interactive website built to practice web development skills." data-zh="一个有趣的交互式网站，用于练习网页开发技能。">A fun interactive website built to practice web development skills.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">CSS/HTML</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Sssapollo/catbook-react" class="project-link" target="_blank">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <div class="demo-grid">
+                                <div class="demo-result-card">
+                                    <p class="demo-summary" id="demo-summary"></p>
+                                    <div class="route-stats">
+                                        <div>
+                                            <span class="route-stat-label" data-en="Duration" data-zh="时长">Duration</span>
+                                            <strong id="demo-duration"></strong>
+                                        </div>
+                                        <div>
+                                            <span class="route-stat-label" data-en="Distance" data-zh="距离">Distance</span>
+                                            <strong id="demo-distance"></strong>
+                                        </div>
+                                        <div>
+                                            <span class="route-stat-label" data-en="Mood fit" data-zh="匹配度">Mood fit</span>
+                                            <strong id="demo-vibe"></strong>
+                                        </div>
+                                    </div>
+                                    <div class="route-list" id="demo-stops"></div>
+                                </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-en="Get In Touch" data-zh="联系我">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new opportunities, collaborating on interesting projects, or just having a chat about technology.</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>ge94zir@tum.de</p>
+                                <div class="demo-map-card">
+                                    <div class="demo-map">
+                                        <div class="map-grid"></div>
+                                        <svg viewBox="0 0 320 240" class="route-svg" aria-hidden="true">
+                                            <path id="demo-route-path" d="" pathLength="100"></path>
+                                            <circle class="route-node" cx="46" cy="176" r="7"></circle>
+                                            <circle class="route-node" cx="160" cy="86" r="7"></circle>
+                                            <circle class="route-node" cx="274" cy="54" r="7"></circle>
+                                        </svg>
+                                        <div class="map-note" id="demo-map-note"></div>
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://linkedin.com/in/tianding-hou-1a5a3a302/">linkedin.com/in/tianding-hou-1a5a3a302/</a>
+                    </article>
+
+                    <div class="projects-grid">
+                        <article class="project-card reveal">
+                            <div class="project-card-header">
+                                <span class="project-index">01</span>
+                                <h3 data-en="IV-SLAM Seminar" data-zh="IV-SLAM 研讨课">IV-SLAM Seminar</h3>
                             </div>
+                            <p data-en="Seminar work on Introspective Vision for SLAM, focused on modular and context-aware noise modeling in visual SLAM pipelines, and on improving perception robustness." data-zh="围绕 Introspective Vision for SLAM 的研讨课项目，重点研究视觉 SLAM 流水线中的模块化、上下文感知噪声建模，以及感知鲁棒性的提升。">Seminar work on Introspective Vision for SLAM, focused on modular and context-aware noise modeling in visual SLAM pipelines, and on improving perception robustness.</p>
+                            <div class="project-meta">
+                                <span class="meta-chip">Visual SLAM</span>
+                                <span class="meta-chip">Research</span>
+                                <span class="meta-chip">Robotics</span>
+                                <span class="meta-chip">Perception</span>
+                            </div>
+                            <span class="text-link" data-en="Academic Seminar" data-zh="课程项目">Academic Seminar</span>
+                        </article>
+
+                        <article class="project-card reveal">
+                            <div class="project-card-header">
+                                <span class="project-index">02</span>
+                                <h3 data-en="Secure Memory Unit" data-zh="安全存储单元">Secure Memory Unit</h3>
+                            </div>
+                            <p data-en="Designed a hardware simulation environment for RISC-V CPU modules using C++ and SystemC, including address scrambling, data encryption, and parity-based error detection." data-zh="使用 C++ 和 SystemC 为 RISC-V CPU 模块设计了硬件仿真环境，并验证了地址扰动、数据加密和基于奇偶校验的错误检测等安全特性。">Designed a hardware simulation environment for RISC-V CPU modules using C++ and SystemC, including address scrambling, data encryption, and parity-based error detection.</p>
+                            <div class="project-meta">
+                                <span class="meta-chip">C++ / SystemC</span>
+                                <span class="meta-chip">C</span>
+                                <span class="meta-chip">RISC-V</span>
+                                <span class="meta-chip">Security</span>
+                            </div>
+                            <a href="https://github.com/Sssapollo/grass25-projekt" target="_blank" rel="noreferrer" class="text-link" data-en="Repository" data-zh="仓库链接">Repository</a>
+                        </article>
+
+                        <article class="project-card reveal">
+                            <div class="project-card-header">
+                                <span class="project-index">03</span>
+                                <h3 data-en="Personal Portfolio Website" data-zh="个人网站">Personal Portfolio Website</h3>
+                            </div>
+                            <p data-en="A responsive personal website built with HTML, CSS, and JavaScript showcasing my skills and projects." data-zh="一个使用 HTML、CSS 和 JavaScript 构建的响应式个人网站，展示我的技能和项目。">A responsive personal website built with HTML, CSS, and JavaScript showcasing my skills and projects.</p>
+                            <div class="project-meta">
+                                <span class="meta-chip">HTML</span>
+                                <span class="meta-chip">CSS</span>
+                                <span class="meta-chip">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/Sssapollo/Sssapollo.github.io" target="_blank" rel="noreferrer" class="text-link" data-en="Repository" data-zh="仓库链接">Repository</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section skills"><div class="container">
+                <div class="section-heading"><span class="section-number">03</span><h2 data-en="Skills & directions" data-zh="技能与学习方向">Skills & directions</h2></div>
+                <div class="skills-grid">
+                    <article class="skill-panel"><h3 data-en="Programming" data-zh="编程基础">Programming</h3><div><p class="skill-stack">Python · Java · C / C++ · TypeScript · Bash · LaTeX</p><p data-en="Python and Java are my core languages; other tools support specific project needs." data-zh="以 Python 和 Java 为主要语言，按项目需要使用其他工具。">Python and Java are my core languages; other tools support specific project needs.</p></div></article>
+                    <article class="skill-panel"><h3 data-en="LLM applications" data-zh="LLM 应用">LLM applications</h3><div><p class="skill-stack">Conversational systems · Recommendation · React · Spring Boot WebFlux</p><p data-en="Hands-on experience through Moodtrip: emotion-aware dialogue and personalized recommendations." data-zh="通过 Moodtrip 实践情绪感知对话与个性化推荐。">Hands-on experience through Moodtrip: emotion-aware dialogue and personalized recommendations.</p></div></article>
+                    <article class="skill-panel"><h3 data-en="Robot learning" data-zh="机器人学习">Robot learning</h3><div><p class="skill-stack">VLA · Action chunking · PyTorch · NumPy · OpenPI · LeRobot</p><p data-en="Thesis work on visual event estimation, asynchronous inference, action blending, and real-world evaluation. Visual SLAM seminar research." data-zh="毕设涉及视觉事件估计、异步推理、动作融合与真实机器人评估；研讨课研究视觉 SLAM。">Thesis work on visual event estimation, asynchronous inference, action blending, and real-world evaluation. Visual SLAM seminar research.</p></div></article>
+                    <article class="skill-panel"><h3 data-en="Systems & tools" data-zh="系统与工程">Systems & tools</h3><div><p class="skill-stack">Git · Linux · SSH · PostgreSQL · SystemC · RISC-V</p><p data-en="Remote experiment workflows, software integration, and hardware simulation." data-zh="远程实验流程、软件集成与硬件仿真。">Remote experiment workflows, software integration, and hardware simulation.</p></div></article>
+                    <article class="skill-panel learning-row"><h3 data-en="Exploring next" data-zh="继续学习">Exploring next</h3><div><p class="skill-stack">Agents · RAG · Multimodal AI</p><p data-en="Current learning interests, building on my LLM application and robotics experience." data-zh="在现有 LLM 应用与机器人经历基础上，继续学习的方向。">Current learning interests, building on my LLM application and robotics experience.</p></div></article>
+                </div>
+            </div></section>
+
+            <section id="education" class="section education">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-number">04</span><h2 data-en="Education" data-zh="教育经历">Education</h2>
+                    </div>
+                    <div class="timeline">
+                        <article class="timeline-card"><span class="timeline-date" data-en="2026 – Present" data-zh="2026 – 至今">2026 – Present</span><h3 data-en="M.Sc. in Computer Science" data-zh="计算机科学硕士">M.Sc. in Computer Science</h3><p class="timeline-place" data-en="Technical University of Munich" data-zh="慕尼黑工业大学">Technical University of Munich</p><p data-en="Continuing my studies in AI, software systems, and robotics." data-zh="继续学习 AI、软件系统与机器人。">Continuing my studies in AI, software systems, and robotics.</p></article>
+                        <article class="timeline-card reveal">
+                            <span class="timeline-date" data-en="2023 – 2026" data-zh="2023 – 2026">2023 – 2026</span>
+                            <h3 data-en="B.Sc. studies in Computer Science" data-zh="计算机科学本科学习">B.Sc. studies in Computer Science</h3>
+                            <p class="timeline-place" data-en="Technical University of Munich" data-zh="慕尼黑工业大学">Technical University of Munich</p>
+                            <p data-en="Undergraduate studies with an academic focus on software engineering, algorithms, AI fundamentals, and hands-on systems work." data-zh="计算机科学本科学习，课程重点包括软件工程、算法、AI 基础以及偏实践的系统项目。">Undergraduate studies with an academic focus on software engineering, algorithms, AI fundamentals, and hands-on systems work.</p>
+                        </article>
+                        <article class="timeline-card reveal">
+                            <span class="timeline-date">2016 - 2022</span>
+                            <h3 data-en="High School Diploma" data-zh="高中教育">High School Diploma</h3>
+                            <p class="timeline-place" data-en="Chengdu Experimental Foreign Language School" data-zh="成都实验外国语学校">Chengdu Experimental Foreign Language School</p>
+                            <p data-en="Graduated with honors, developed initial interest in programming and technology. Learned English and German." data-zh="优秀毕业生，编程和技术产生兴趣，为往后的学习打下扎实的基础。学习了英语和德语。">Graduated with honors, developed initial interest in programming and technology. Learned English and German.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <div class="contact-card reveal">
+                        <div>
+                            <p class="section-kicker" data-en="Let's Connect" data-zh="联系我">Let's Connect</p>
+                            <h2 class="section-title contact-title" data-en="Interested in working together?" data-zh="期待和你一起合作。">Interested in working together?</h2>
+                            <p class="contact-copy" data-en="Open to internships, collaboration, and technically ambitious work in software engineering, AI systems, and robotics." data-zh="目前对实习、合作，以及软件工程、AI 系统和机器人方向上有技术挑战的工作保持开放。">Open to internships, collaboration, and technically ambitious work in software engineering, AI systems, and robotics.</p>
                         </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/Sssapollo">github.com/Sssapollo</a>
-                            </div>
+                        <div class="contact-links">
+                            <a href="mailto:tianding.hou@tum.de">tianding.hou@tum.de</a>
+                            <a href="https://linkedin.com/in/tianding-hou-1a5a3a302/" target="_blank" rel="noreferrer">LinkedIn</a>
+                            <a href="https://github.com/Sssapollo" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://sssapollo.github.io/" target="_blank" rel="noreferrer">sssapollo.github.io</a>
+                            <span data-en="Munich, Germany" data-zh="德国慕尼黑">Munich, Germany</span>
                         </div>
                     </div>
                 </div>
-                
-            </div>
-        </div>
-    </section>
+            </section>
+        </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Tianding Hou. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p>&copy; 2026 Tianding Hou. All rights reserved.</p>
+                <p data-en="AI systems, software, and robot learning." data-zh="AI 系统、软件与机器人学习。">AI systems, software, and robot learning.</p>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
